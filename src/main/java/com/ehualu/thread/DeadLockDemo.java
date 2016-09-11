@@ -1,5 +1,7 @@
 package com.ehualu.thread;
 
+import java.util.concurrent.LinkedTransferQueue;
+
 /**
  * Created by bright on 16-9-7.
  */
@@ -8,6 +10,7 @@ public class DeadLockDemo {
     private static String B = "B";
 
     public static void main(String[] args){
+
         deadLock();
     }
 
