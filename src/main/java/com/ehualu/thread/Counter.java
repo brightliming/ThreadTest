@@ -55,7 +55,7 @@ public class Counter {
     private void safeCount(){
         for(;;){
             int i = atomicI.get();
-            boolean suc = atomicI.compareAndSet(i,i++);
+            boolean suc = atomicI.compareAndSet(i,++i);
             if(suc){
                 break;
             }
