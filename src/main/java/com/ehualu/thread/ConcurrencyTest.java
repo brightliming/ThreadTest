@@ -16,7 +16,7 @@ public class ConcurrencyTest {
         long start = System.currentTimeMillis();
 
         Thread thread = new Thread(new Runnable() {
-            @Override
+
             public void run() {
                 int a = 0;
                 for(long i = 0; i<count ;i++){
